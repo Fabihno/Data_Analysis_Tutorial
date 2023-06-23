@@ -3,10 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/data.csv")
-df1 = pd.read_csv("data/cities.csv", header=None)
+# displaying the first 5 rows in data
 print(df.head())
-
-
+# displaying last five rows in data
+print(df.tail())
+#determining the correlation in the data
+print(df.corr())
 #checking duplicate values using duplicated function
 print(df.duplicated())
 #splitting colums in a dataframe using split function
